@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Adedotun Temidayo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">AT</span
+        ><span>Adedotun<span class="brand-dot">.</span></span></a
+      ><button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a><a href="about.html">About</a
+        ><a href="projects.html">Projects</a
+        ><a href="planner.html">Academic Planner</a
+        ><a class="nav-cta active" href="contact.html"
+          >Contact me <span>↗</span></a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero wrap">
+        <p class="eyebrow">OPEN TO CONVERSATION</p>
+        <h1>Let's <span class="gradient-text">connect.</span></h1>
+        <p class="lead">
+          Have a question, an idea, or an opportunity to learn together? Send me
+          a message.
+        </p>
+      </section>
+      <section class="wrap contact-layout section">
+        <div class="contact-copy">
+          <p class="eyebrow">CONTACT DETAILS</p>
+          <h2>I'd be glad<br />to hear from you.</h2>
+          <p>
+            Reach out using the form or contact me directly through the details
+            below.
+          </p>
+          <div class="contact-detail">
+            <span class="detail-icon">✉</span>
+            <div>
+              <small>EMAIL</small
+              ><a href="mailto:kuddies2008@gmail.com">kuddies2008@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <span class="detail-icon">☎</span>
+            <div>
+              <small>PHONE</small><a href="tel:07083088548">07083088548</a>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-heading">
+            <h2>Send a message</h2>
+            <span>ALL FIELDS REQUIRED</span>
+          </div>
+          <label for="name">Your name</label
+          ><input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your name"
+            required
+          /><small class="error" id="name-error"></small>
+          <label for="email">Email address</label
+          ><input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          /><small class="error" id="email-error"></small>
+          <label for="phone">Phone number</label
+          ><input
+            id="phone"
+            name="phone"
+            type="tel"
+            inputmode="numeric"
+            placeholder="Digits only"
+            required
+          /><small class="error" id="phone-error"></small>
+          <label for="message">Message</label
+          ><textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your message..."
+            required
+          ></textarea
+          ><small class="error" id="message-error"></small>
+          <button class="button primary submit-button" type="submit">
+            Validate message <span>↗</span>
+          </button>
+          <p id="form-feedback" class="form-feedback" role="status">
+            This demo validates your details in the browser. It does not send or
+            store messages.
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-top">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">AT</span
+          ><span>Adedotun<span class="brand-dot">.</span></span></a
+        >
+        <p>Learning today. Securing tomorrow.</p>
+        <div class="footer-links">
+          <a href="mailto:kuddies2008@gmail.com">Email</a
+          ><a href="tel:07083088548">Call</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span
+          >© <span data-year></span> Adedotun Temidayo. All rights
+          reserved.</span
+        ><span>Designed with purpose <b>✳</b></span>
+      </div>
+    </footer>
+  </body>
+</html>

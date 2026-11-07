@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Planner | Adedotun Temidayo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">AT</span
+        ><span>Adedotun<span class="brand-dot">.</span></span></a
+      ><button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <nav class="nav">
+        <a href="index.html">Home</a><a href="about.html">About</a
+        ><a href="projects.html">Projects</a
+        ><a class="active" href="planner.html">Academic Planner</a
+        ><a class="nav-cta" href="contact.html">Contact me <span>↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero wrap">
+        <p class="eyebrow">STAY FOCUSED · MAKE PROGRESS</p>
+        <h1>Academic <span class="gradient-text">planner.</span></h1>
+        <p class="lead">
+          Keep track of study sessions, coursework, and personal learning goals.
+          Your tasks are saved in this browser.
+        </p>
+      </section>
+      <section class="wrap planner-wrap">
+        <div class="planner-summary">
+          <div>
+            <span class="summary-label">YOUR TASK BOARD</span>
+            <h2>One step at a time.</h2>
+          </div>
+          <div class="task-count">
+            <strong id="remaining-count">0</strong><span>tasks remaining</span>
+          </div>
+        </div>
+        <form id="task-form" class="task-form">
+          <label class="sr-only" for="task-input">New task</label
+          ><input
+            id="task-input"
+            type="text"
+            maxlength="120"
+            placeholder="e.g. Review network security notes"
+            required
+          /><button class="button primary" type="submit">
+            Add task <span>＋</span>
+          </button>
+        </form>
+        <div class="planner-toolbar">
+          <div class="filter-tabs" role="group" aria-label="Filter tasks">
+            <button type="button" class="filter-btn active" data-filter="all">
+              All tasks</button
+            ><button type="button" class="filter-btn" data-filter="active">
+              To do</button
+            ><button type="button" class="filter-btn" data-filter="completed">
+              Completed
+            </button>
+          </div>
+          <button id="clear-completed" class="clear-btn" type="button">
+            Clear completed
+          </button>
+        </div>
+        <ul id="task-list" class="task-list" aria-live="polite"></ul>
+        <p id="empty-state" class="empty-state">
+          Your task list is clear. Add a task to get started.
+        </p>
+        <div class="planner-tip">
+          <span>✳</span>
+          <p>
+            <strong>Small tip:</strong> Break large assignments into smaller
+            tasks. Consistent progress adds up.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-top">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">AT</span
+          ><span>Adedotun<span class="brand-dot">.</span></span></a
+        >
+        <p>Learning today. Securing tomorrow.</p>
+        <div class="footer-links">
+          <a href="mailto:kuddies2008@gmail.com">Email</a
+          ><a href="tel:07083088548">Call</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="wrap footer-bottom">
+        <span
+          >© <span data-year></span> Adedotun Temidayo. All rights
+          reserved.</span
+        ><span>Designed with purpose <b>✳</b></span>
+      </div>
+    </footer>
+  </body>
+</html>
